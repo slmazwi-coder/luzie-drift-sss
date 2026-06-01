@@ -3,9 +3,9 @@ import { motion } from 'motion/react';
 import { Award, TrendingUp, Users, Megaphone, ArrowRight } from 'lucide-react';
 
 const stats = [
-  { label: 'Matric Pass Rate', value: '94.5%', icon: TrendingUp },
-  { label: 'Bachelors Pass', value: '71.8%', icon: Award },
-  { label: 'Subject Distinctions', value: '451', icon: Users },
+  { label: 'No-Fee School', value: '100%', icon: TrendingUp },
+  { label: 'NSC Candidates', value: 'Gr 10-12', icon: Award },
+  { label: 'Community', value: 'Rural', icon: Users },
 ];
 
 export const Home = () => {
@@ -23,12 +23,12 @@ export const Home = () => {
                 <div className="flex flex-wrap items-center gap-2">
                   <div className="text-sm font-black uppercase tracking-widest text-[#166534]">Notice</div>
                   <span className="px-2 py-1 rounded-full text-xs font-bold bg-white border border-[#C8A400] text-gray-700">
-                    2027
+                    Admissions
                   </span>
                 </div>
                 <h3 className="text-xl font-extrabold text-gray-900 mt-2">Admissions applications are now open</h3>
                 <p className="text-gray-700 mt-1">
-                  General school applications for the <span className="font-bold">2027</span> academic year are open.
+                  Luzie Drift SSS welcomes learners from Grades 10 to 12. As a no-fee school, quality education is accessible to all.
                 </p>
                 <a href="/admissions" className="mt-4 inline-flex items-center gap-2 text-[#166534] font-bold">
                   Apply now <ArrowRight size={18} />
@@ -42,17 +42,17 @@ export const Home = () => {
               </div>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <div className="text-sm font-black uppercase tracking-widest text-[#166534]">Boarding</div>
+                  <div className="text-sm font-black uppercase tracking-widest text-[#166534]">Our Motto</div>
                   <span className="px-2 py-1 rounded-full text-xs font-bold bg-white border border-gray-200 text-gray-700">
-                    2027
+                    Strive to Excel
                   </span>
                 </div>
-                <h3 className="text-xl font-extrabold text-gray-900 mt-2">Boarding applications are now open</h3>
+                <h3 className="text-xl font-extrabold text-gray-900 mt-2">Excellence in Education</h3>
                 <p className="text-gray-700 mt-1">
-                  Hostel accommodation applications for the <span className="font-bold">2027</span> academic year are open.
+                  Luzie Drift SSS is committed to academic achievement, personal development, and community upliftment.
                 </p>
-                <a href="/boarding" className="mt-4 inline-flex items-center gap-2 text-[#166534] font-bold">
-                  Apply for boarding <ArrowRight size={18} />
+                <a href="/about" className="mt-4 inline-flex items-center gap-2 text-[#166534] font-bold">
+                  Learn more <ArrowRight size={18} />
                 </a>
               </div>
             </div>
@@ -89,7 +89,7 @@ export const Home = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="section-title">Our Motto</h2>
           <p className="text-2xl text-gray-700 leading-relaxed font-light italic">
-            "Learning with discipline, respect, and pride."
+            "Strive to Excel"
           </p>
         </div>
       </section>

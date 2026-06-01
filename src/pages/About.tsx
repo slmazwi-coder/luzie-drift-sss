@@ -20,7 +20,7 @@ export const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Page Title */}
-        <h1 className="section-title">About Lupindo SSS</h1>
+        <h1 className="section-title">About Luzie Drift SSS</h1>
 
         {/* ── Section 1: Our School + Campus Image ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-stretch mb-16 sm:mb-24">
@@ -150,6 +150,98 @@ export const About = () => {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </motion.section>
+
+        {/* ── Section 3: Academic Programme ── */}
+        <motion.section
+          initial={ { opacity: 0, y: 24 } }
+          whileInView={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.4 } }
+          viewport={ { once: true } }
+          className="mb-16 sm:mb-24"
+        >
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-[#166534] mb-2">Academic Programme</h2>
+            <div className="w-16 h-1 bg-[#166534] mx-auto rounded-full" />
+          </div>
+
+          <div className="bg-[#FDF9EC] rounded-3xl p-8 md:p-12 shadow-lg border border-[#C8A400]">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <p>
+                Luzie Drift SSS offers a comprehensive National Senior Certificate (NSC) curriculum aligned with the Curriculum and Assessment Policy Statement (CAPS) framework, the national standard for secondary education in South Africa. Learners in Grades 10 through 12 work towards the National Senior Certificate, the qualification required for entry into further and higher education.
+              </p>
+
+              <h3 className="text-xl font-bold text-[#166534] mt-8 mb-4">Curriculum Approach</h3>
+              <p>
+                The school delivers a broad-based curriculum that prepares learners for both tertiary study and the world of work. Core subjects include:
+              </p>
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li>Home Language</li>
+                <li>First Additional Language</li>
+                <li>Mathematics or Mathematical Literacy</li>
+                <li>Life Orientation</li>
+                <li>Three elective subjects from a range of academic offerings</li>
+              </ul>
+              <p className="mt-4">
+                Learners are encouraged to pursue subjects aligned with their academic strengths and career aspirations, with guidance from dedicated educators and support from the school's academic programme.
+              </p>
+
+              <h3 className="text-xl font-bold text-[#166534] mt-8 mb-4">External Examinations</h3>
+              <p>
+                Grade 12 learners at Luzie Drift SSS write the National Senior Certificate examinations administered by the Eastern Cape Department of Education (Examination Centre No. 4271022). These examinations open pathways to universities, TVET colleges, and various career opportunities.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* ── Section 4: Leadership & Governance ── */}
+        <motion.section
+          initial={ { opacity: 0, y: 24 } }
+          whileInView={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.4 } }
+          viewport={ { once: true } }
+          className="mb-16 sm:mb-24"
+        >
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-[#166534] mb-2">Leadership & Governance</h2>
+            <div className="w-16 h-1 bg-[#166534] mx-auto rounded-full" />
+          </div>
+
+          <div className="bg-[#FDF9EC] rounded-3xl p-8 md:p-12 shadow-lg border border-[#C8A400]">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Luzie Drift SSS is led by a dedicated school management team committed to maintaining a supportive, disciplined, and academically stimulating environment. The school's principal, Mr. X.L. Nyume, provides strategic leadership in partnership with the School Governing Body (SGB), which plays a vital role in ensuring community involvement in the governance and development of the school.
+              </p>
+              <p>
+                As a public school under the South African Schools Act (SASA) of 1996, Luzie Drift SSS upholds the democratic governance structures that give parents, educators, and learners a voice in shaping school policy and direction.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* ── Section 5: Our Community ── */}
+        <motion.section
+          initial={ { opacity: 0, y: 24 } }
+          whileInView={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.4 } }
+          viewport={ { once: true } }
+          className="mb-16 sm:mb-24"
+        >
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-[#166534] mb-2">Our Community</h2>
+            <div className="w-16 h-1 bg-[#166534] mx-auto rounded-full" />
+          </div>
+
+          <div className="bg-[#FDF9EC] rounded-3xl p-8 md:p-12 shadow-lg border border-[#C8A400]">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Luzie Drift SSS is embedded in the heart of the Elundini Local Municipality, a Category B municipality in the Joe Gqabi District. The broader Mt Fletcher area is situated at the foothills of the Drakensberg Mountains — one of the most scenic regions in the Eastern Cape, characterised by fertile soils, high rainfall, and breathtaking natural landscapes.
+              </p>
+              <p>
+                The community is predominantly rural, with the main languages spoken being Xhosa and Sotho. Local livelihoods are sustained through agriculture, social services, and small-scale trade. Luzie Drift SSS plays a critical role in shaping the future of young people in a region where access to quality education directly impacts community development and economic prospects.
+              </p>
             </div>
           </div>
         </motion.section>

@@ -25,7 +25,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">Address</h3>
-                  <p className="text-gray-600">{info.address}</p>
+                  <p className="text-gray-600">Luzie Drift, Mt Fletcher (Tlokoeng), Eastern Cape, South Africa</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -34,7 +34,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">{info.phone}</p>
+                  <p className="text-gray-600">Please contact school for phone number</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -43,7 +43,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">Email</h3>
-                  <p className="text-gray-600 break-words">{info.email}</p>
+                  <p className="text-gray-600 break-words">Please contact school for email</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -60,7 +60,7 @@ export const Contact = () => {
 
             <div className="mt-10 sm:mt-12 rounded-3xl overflow-hidden h-[260px] sm:h-[320px] border-4 border-gray-100 shadow-inner bg-gray-50 relative">
               <iframe
-                title="Lupindo SSS Location"
+                title="Luzie Drift SSS Location"
                 src="https://www.google.com/maps?q=-30.40676,28.70707&z=15&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"

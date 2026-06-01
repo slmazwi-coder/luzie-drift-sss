@@ -1,7 +1,7 @@
 // Storage utility — localStorage wrapper (swap with Supabase later)
 
 // ── Cache-buster: if stored data version doesn't match, clear stale school data ──
-const SCHOOL_DATA_VERSION = 'lupindo-v2';
+const SCHOOL_DATA_VERSION = 'luzie-drift-v1';
 if (localStorage.getItem('school_data_version') !== SCHOOL_DATA_VERSION) {
   ['admin_about', 'admin_contact', 'admin_news'].forEach(k => localStorage.removeItem(k));
   localStorage.setItem('school_data_version', SCHOOL_DATA_VERSION);
@@ -290,10 +290,10 @@ export function calculateAverageMark(subjectMarks: SubjectMark[]): number {
 const defaultNews: NewsItem[] = [
   {
     id: '1',
-    title: '2027 Applications Open',
+    title: 'Welcome to Luzie Drift SSS',
     date: 'Now open',
     content:
-      'Applications for admissions and boarding for the 2027 academic year are now open. Please submit your application using the online forms.',
+      'Applications for admissions for the academic year are now open. Luzie Drift Senior Secondary School welcomes learners from the surrounding community.',
     image: '',
   },
 ];
@@ -310,9 +310,9 @@ export const setApplications = (items: Application[]) => setItems('admin_applica
 
 // Contact
 const defaultContact: ContactInfo = {
-  address: 'Lukholweni Location, P.O. Box 1809, Matatiele, 4730 (Eastern Cape)',
-  phone: '+27 78 013 8492',
-  email: '200500449@ecschools.org.za',
+  address: 'Luzie Drift, Mt Fletcher (Tlokoeng), Eastern Cape, South Africa',
+  phone: 'Contact school for phone number',
+  email: 'Contact school for email',
   monThu: '07:30 - 15:30',
   friday: '07:30 - 13:30',
   weekend: 'Closed',
@@ -323,15 +323,15 @@ export const setContact = (info: ContactInfo) => setObject('admin_contact', info
 // About
 const defaultAbout: AboutInfo = {
   historyParagraphs: [
-    'Lupindo Senior Secondary School is a public school proudly serving learners at Lukholweni Location, Matatiele, in the Alfred Nzo West District of the Eastern Cape.',
-    'Located within the Nunge Circuit under CMC Matatiele, Lupindo SSS is committed to academic excellence, disciplined learning, and community values. Our motto — "Amidst difficulties we rise" — reflects the spirit of every learner who walks through our doors.',
-    'Parents and guardians are encouraged to engage actively with the school through meetings, events, and ongoing learner support. Together we build a culture of achievement and pride.',
+    'Luzie Drift Senior Secondary School is a public no-fee senior secondary school situated in the Luzie Drift area of Mt Fletcher (officially renamed Tlokoeng in 2022), in the Eastern Cape province of South Africa.',
+    'The school serves as a cornerstone of education in the wider Elundini Local Municipality community, providing secondary education to learners from the surrounding rural areas. As a no-fee school, Luzie Drift SSS ensures that every learner in the community has access to quality education regardless of economic circumstances.',
+    'The school operates under the auspices of the Joe Gqabi Education District and the Eastern Cape Department of Education. Guided by a dedicated team of educators, learners are nurtured to reach their full potential in line with our motto "Strive to Excel".',
   ],
-  principalName: 'Mr S.S. Mafunda',
+  principalName: 'Mr. X.L. Nyume',
   principalTitle: 'Principal',
   principalMessage: [
-    'Welcome to Lupindo Senior Secondary School. We believe every learner carries within them the capacity for greatness. Our role is to unlock it — through discipline, love, and unwavering belief in their potential.',
-    'We value respect, responsibility, and pride in our school community. Hard work pays, and at Lupindo SSS, we are committed to proving that amidst every difficulty, we rise.',
+    'Welcome to Luzie Drift Senior Secondary School. Our motto "Strive to Excel" encapsulates our dedication to academic achievement, personal development, and community upliftment.',
+    'We believe every learner carries within them the capacity for greatness. Our role is to unlock it — through discipline, dedication, and unwavering belief in their potential.',
   ],
 };
 export const getAbout = () => getObject<AboutInfo>('admin_about', defaultAbout);

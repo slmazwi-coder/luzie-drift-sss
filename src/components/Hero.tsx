@@ -3,19 +3,19 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  { url: './lshero1.png'},  caption: 'Academic excellence' },
-  { url: './lshero2.png'},  caption: 'Amidst difficulties we rise' },
-  { url: './lshero3.png'},  caption: 'Provincial athletics champions' },
-  { url: './lshero4.png'},  caption: 'Our learners, our pride' },
-  { url: './lshero5.png'},  caption: 'Celebrating achievement' },
-  { url: './assets/hero/lshero1.png',  caption: 'Discipline and hard work' },
-  { url: './assets/hero/lshero2.png',  caption: 'The spirit of Lupindo SSS' },
-  { url: './assets/hero/lshero3.png',  caption: 'Medal winners — Eastern Cape' },
-  { url: './assets/hero/lshero4.png',  caption: 'Graduation and certificates' },
-  { url: './assets/hero/lshero5.png', caption: 'Community and culture' },
-  { url: './assets/hero/lshero1.png', caption: 'Leadership and excellence' },
-  { url: './assets/hero/lshero2.png', caption: 'Tie ceremony — hard work pays' },
-  { url: './assets/hero/lshero3.png', caption: 'Together we rise' },
+  { url: './lshero1.png', caption: 'Strive to Excel' },
+  { url: './lshero2.png', caption: 'Academic excellence' },
+  { url: './lshero3.png', caption: 'Building tomorrows leaders' },
+  { url: './lshero4.png', caption: 'Our learners, our pride' },
+  { url: './lshero5.png', caption: 'Community and culture' },
+  { url: './assets/hero/lshero1.png', caption: 'Excellence in education' },
+  { url: './assets/hero/lshero2.png', caption: 'The spirit of Luzie Drift SSS' },
+  { url: './assets/hero/lshero3.png', caption: 'Learning together' },
+  { url: './assets/hero/lshero4.png', caption: 'Achievement and pride' },
+  { url: './assets/hero/lshero5.png', caption: 'Serving our community' },
+  { url: './assets/hero/lshero1.png', caption: 'Quality education' },
+  { url: './assets/hero/lshero2.png', caption: 'Nurturing potential' },
+  { url: './assets/hero/lshero3.png', caption: 'Together we succeed' },
 ];
 
 export const Hero = () => {
@@ -84,7 +84,7 @@ export const Hero = () => {
         >
           <img
             src="./lslogo.png"
-            alt="Lupindo SSS crest"
+            alt="Luzie Drift SSS crest"
             className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-2xl mx-auto"
             style={ { border: '3px solid #C8A400' } }
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
@@ -98,7 +98,7 @@ export const Hero = () => {
           className="text-4xl md:text-6xl font-extrabold mb-3 uppercase tracking-wider"
           style={ { color: '#C8A400' } }
         >
-          Lupindo SSS
+          Luzie Drift SSS
         </motion.h1>
 
         <motion.p
@@ -108,7 +108,7 @@ export const Hero = () => {
           className="text-base md:text-xl font-light italic mb-8"
           style={ { color: 'rgba(200,164,0,0.8)' } }
         >
-          "Amidst difficulties we rise"
+          "Strive to Excel"
         </motion.p>
 
         <motion.div
