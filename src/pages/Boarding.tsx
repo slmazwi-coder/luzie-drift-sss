@@ -536,7 +536,7 @@ export const Boarding = () => {
                           <input className={inp} type="number" min={0} value={learner.distanceHomeToSchool} onChange={e => patchL('distanceHomeToSchool', e.target.value)} />
                         </Field>
                         <Field label="Name & Address of School Admitted To" className="sm:col-span-2">
-                          <input className={inp} value={learner.schoolNameAndAddress} onChange={e => patchL('schoolNameAndAddress', e.target.value)} placeholder="Lupindo SSS, Igoga Location, Matatiele" />
+                          <input className={inp} value={learner.schoolNameAndAddress} onChange={e => patchL('schoolNameAndAddress', e.target.value)} placeholder="Luzie Drift SSS, Igoga Location, Matatiele" />
                         </Field>
                         <Field label="Surname & First Name(s) of Parent/Guardian" className="sm:col-span-2">
                           <input className={inp + " bg-gray-50"} placeholder="Enter parent/guardian full names" readOnly value={`${father.name} ${father.surname}`.trim()} />
