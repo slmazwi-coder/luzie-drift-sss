@@ -12,6 +12,7 @@ const navLinks = [
   { name: 'Sport', path: '/sport' },
   { name: 'Activities', path: '/activities' },
   { name: 'Admissions', path: '/admissions' },
+  { name: 'Apply Now', path: '/boarding', highlight: true },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -87,19 +88,24 @@ export const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className="px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap"
+                className={cn(
+                  'px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap',
+                  link.highlight && 'bg-[#166534] text-[#C8A400] font-bold'
+                )}
                 style={
-                  location.pathname === link.path
+                  location.pathname === link.path && !link.highlight
                     ? { color: '#C8A400', background: '#166534', fontWeight: 700 }
-                    : { color: '#166534' }
+                    : location.pathname !== link.path && !link.highlight
+                    ? { color: '#166534' }
+                    : undefined
                 }
                 onMouseEnter={e => {
-                  if (location.pathname !== link.path) {
+                  if (location.pathname !== link.path && !link.highlight) {
                     (e.target as HTMLElement).style.background = 'rgba(123,28,46,0.12)';
                   }
                 }}
                 onMouseLeave={e => {
-                  if (location.pathname !== link.path) {
+                  if (location.pathname !== link.path && !link.highlight) {
                     (e.target as HTMLElement).style.background = 'transparent';
                   }
                 }}
@@ -120,11 +126,16 @@ export const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className="flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-colors"
+                className={cn(
+                  'flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-colors',
+                  link.highlight && 'bg-[#166534] text-[#C8A400] font-bold'
+                )}
                 style={
-                  location.pathname === link.path
+                  location.pathname === link.path && !link.highlight
                     ? { color: '#C8A400', background: '#166534', fontWeight: 700 }
-                    : { color: '#166534' }
+                    : location.pathname !== link.path && !link.highlight
+                    ? { color: '#166534' }
+                    : undefined
                 }
               >
                 {link.name}
