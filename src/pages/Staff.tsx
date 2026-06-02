@@ -12,7 +12,7 @@ interface StaffMember {
 const staffData: StaffMember[] = [
   // ── Leadership ──────────────────────────────────────────────────────────
   {
-    name: 'Mr S.S. Mafunda',
+    name: 'Mr X.L. Nyume',
     position: 'Principal',
     category: 'Leadership',
     image: './assets/about/principal.jpg',
@@ -45,21 +45,12 @@ const staffData: StaffMember[] = [
   },
 
   // ── Class Teachers ───────────────────────────────────────────────────────
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 8A',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 8B',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 8C',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 9A',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 9B',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 9C',  category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 10A', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 10B', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 10C', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 11A', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 11B', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 11C', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 12A', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 12B', category: 'Class Teachers' },
-  { name: 'Class Teacher', position: 'Class Teacher — Grade 12C', category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 10A',  category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 10B',  category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 11A',  category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 11B',  category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 12A',  category: 'Class Teachers' },
+  { name: 'Class Teacher', position: 'Class Teacher — Grade 12B',  category: 'Class Teachers' },
 
   // ── Support Staff ────────────────────────────────────────────────────────
   { name: 'School Administrator', position: 'School Administrator', category: 'Support Staff' },
