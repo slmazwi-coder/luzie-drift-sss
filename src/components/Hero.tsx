@@ -85,7 +85,7 @@ export const Hero = () => {
           <img
             src="./lslogo.png"
             alt="Luzie Drift SSS crest"
-            className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-2xl mx-auto"
+            className="w-28 h-28 md:w-32 md:h-32 rounded-xl object-contain shadow-2xl mx-auto"
             style={ { border: '3px solid #C8A400' } }
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
           />
